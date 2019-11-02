@@ -7,8 +7,8 @@ lines. The variance is estimated using the distance between each line and the po
 
 1. Line Fitting (20 points) Write a function that fits a line to data. Note that Weiss describes a method for doing this using weighted least squares, which essentially only looks at error in the y direction. This fits the examples below,in which noise is added to the y coordinate. If you are interested, you can also implement, for a small amount of extra credit, a total least squares method, that takes account of the Euclidean distance between each point and the line, and see what difference this makes. You will have to do a little research to see how this works. Test your function with the following set of points:
 
-  (i) x=0:0.05:1; y=2*x+1;
-  (ii) x=0:0.05:1; y=2*x+1+0.1*randn(size(x));
+  (i) x=0:0.05:1; y=2*x+1
+  (ii) x=0:0.05:1; y=2*x+1+0.1*randn(size(x))
   (iii) x=0:0.05:1; y=(abs(x-0.5) < 0.25).*(x+1)+(abs(x-0.5) >=0.25).*(-x);
   
   In all cases plot the data and the best fitting lines.
